@@ -80,7 +80,7 @@ input[type="range"]::-ms-thumb {
 
 @media only screen and (max-width: 600px){
 
-    .volume-hiden{
+    #volume_control{
         display: none;
     }
 }
