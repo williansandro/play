@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--CSS Biblioteca Materialize-->
+    <link rel="stylesheet" href="base/css/materialize.min.css">
+    <!--CSSS Customizado-->
+    <link rel="stylesheet" href="style.css">
+    <!--Icones google-->
+    <link href="icons/iconfont/material-icons.css" rel="stylesheet">
+
+    <script src="icons/index.js"></script>
+
+
+
+    <title>DOLBY Audio</title>
+</head>
+
+<body>
+
+    <div id="player">
+        <h4><i class="material-icons" id="icon-equalizer">equalizer</i>Lenovo </h4>
+        <div class="card">
+            <div class="card-image">
+                <a href="#" class="tooltipped btn-floating btn-large pulse halfway-fab btn-large "
+                    data-position="bottom" data-tooltip="Tocar música">
+                    <i class="material-icons " id="play-pause">play_arrow</i>
+                </a>
+            </div>
+            <div class="card-content">
+                <h5>Titulo</h5>
+                <p class="artist">Artista </p>
+
+
+                <div class="row valign-wrapper">
+                    <div class="col s2" id="current-duration">00:00</div>
+
+                    <div class="col s6 range-field valign-wrapper">
+                        <input type="range" min="0" max="0" id="seekbar" step="1">
+                    </div>
+
+                    <div class="col s2" id="total-duration">00:00</div>
+                    <div>
+                        <a href="#">
+                            <i class="tooltipped  material-icons" data-position="bottom" data-tooltip="mudo" id="mute">volume_up</i>
+                        </a>
+
+                    </div>
+                    <div class="col s3 range-field valign-wrapper">
+                        <input type="range" min="0" max="100" step="1" id="volume_control">
+                        <a href="#"><i class="tooltipped material-icons" data-position="bottom" data-tooltip="próxima música" id="proximo">skip_next</i></a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="base/js/jquary.js"></script>
+
+    <script src="base/js/materialize.min.js"></script>
+    <script src="index.js" type="module"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('.tooltipped').tooltip();
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+:root{
+
+    --primary-color: #e2231a;
+}
+
+body{
+    height: 100vh;
+    background: url("base/files/bg.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#player{
+    width: 90%;
+    max-width: 575px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12), 0px 4px 2px -3px rgba(226,35,26),0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card{
+    box-shadow: none;
+    margin: 0;
+}
+
+h4{
+    color: var(--primary-color);
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#icon-equalizer{
+    font-size: 50px;
+}
+
+.card-image{
+    background: url("https://placehold.it/500")no-repeat center center / cover;
+    height: 250px;
+}
+
+audio{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#play-pause{
+    background-color: var(--primary-color) ;
+    border-radius: 50%;
+
+}
+
+#proximo{
+    color: var(--primary-color);
+    transform: translateY(2px);
+    font-size: 40px;
+    padding-left: 15px;
+}
+
+#mute {
+    color: var(--primary-color);
+    transform: translateY(2px);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background-color: var(--primary-color);
+}
+
+input[type="range"]::-moz-range-thumb {
+    background-color: var(--primary-color);
+}
+
+input[type="range"]::-ms-thumb {
+    background-color: var(--primary-color);
+}
