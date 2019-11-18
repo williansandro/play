@@ -1,24 +1,24 @@
 export default [
 
     {
-        title: "DOLBY Audio",
-        artist: "Willian Sandro",
+        title: "Áudio DOBY Atmos",
+        artist: "Pentatonix",
         cover: "image1.png " ,
-        file: "video3.mp4"
+        file: "musica2.mp4"
     },
 
     {
         title: "Aqui vai o título do vídeo",
         artist: "Aqui vai o nome do autor",
         cover: "image2.png" ,
-        file: "video2.mp4"
+        file: "musica1.mp4"
     },
 
     {
         title: "Aqui vai o título do vídeo",
         artist: "Aqui vai o nome do autor",
-        cover: "" ,
-        file: "video1.mp4"
+        cover: "image3.jpg" ,
+        file: "musica3.mp4"
     }
 
 
