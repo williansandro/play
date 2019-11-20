@@ -5,7 +5,9 @@
 
 body{
     height: 100vh;
-    background: url("base/files/bg.png");
+    background-image: url("base/files/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +16,7 @@ body{
 #player{
     width: 90%;
     max-width: 575px;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.55);
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12), 0px 4px 2px -3px rgba(226,35,26),0px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -23,7 +25,15 @@ body{
     margin: 0;
 }
 
-h4{
+#slider-logo{
+    height: 170px;
+}
+
+#slider-logo a img{
+    padding-top: 35%;
+    border: none;
+}
+.h4{
     color: var(--primary-color);
     font-size: 60px;
     font-weight: bold;
@@ -31,14 +41,12 @@ h4{
     align-items: center;
     justify-content: center;
     padding: 10px;
+    
 }
 
-#icon-equalizer{
-    font-size: 50px;
-}
 
 .card-image{
-    background: url("https://placehold.it/500")no-repeat center center / cover;
+    background: url("base/files/dolby1.jpg")no-repeat center center / cover;
     height: 250px;
 }
 
