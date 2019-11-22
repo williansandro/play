@@ -1,6 +1,6 @@
 :root{
 
-    --primary-color: #e2231a;
+    --primary-color: #8f4bd3;
 }
 
 body{
@@ -14,8 +14,9 @@ body{
 }
 
 #player{
+    margin-top: 50px;
     width: 90%;
-    max-width: 575px;
+    max-width: 850px;
     background-color: rgba(0, 0, 0, 0.55);
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12), 0px 4px 2px -3px rgba(226,35,26),0px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
@@ -25,8 +26,14 @@ body{
     margin: 0;
 }
 
-#slider-logo{
-    height: 170px;
+.logo{
+    height: 150px;
+    background-image: url("base/files/lenovo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+
 }
 
 #slider-logo a img{
@@ -46,7 +53,7 @@ body{
 
 
 .card-image{
-    background: url("base/files/dolby1.jpg")no-repeat center center / cover;
+    width: 100%;
     height: 250px;
 }
 
