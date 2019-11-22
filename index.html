@@ -25,14 +25,10 @@
 <body>
 
     <div id="player">
-
-        <div class="carousel" id="slider-logo">
-            <a class="carousel-item" href="#one!"><img src="base/files/lenovo1.png"></a>
-            <a class="carousel-item" href="#two!"><img src="base/files/lenovo2.png"></a>
-            <a class="carousel-item" href="#three!"><img src="base/files/lenovo3.png"></a>
-            <a class="carousel-item" href="#four!"><img src="base/files/lenovo4.png"></a>
+        <div class="logo">
 
         </div>
+
         <div class="card">
             <div class="card-image">
                 <a href="#" class="tooltipped btn-floating btn-large pulse halfway-fab btn-large "
@@ -88,17 +84,6 @@
 
         $(document).ready(function () {
             $('.tooltipped').tooltip();
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.carousel');
-            var instances = M.Carousel.init(elems, options);
-        });
-
-        // Or with jQuery
-
-        $(document).ready(function () {
-            $('.carousel').carousel();
         });
 
 
